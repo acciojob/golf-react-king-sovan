@@ -27,7 +27,7 @@ class App extends Component {
     // bind ArrowRight keydown event
     componentDidMount() {
       document.addEventListener("keydown", (event) => {
-        if (event.key === "ArrowRight" || event.keyCode === 39) {
+        if (event.key === "ArrowRight") {
             this.setState((prevState) => {
                 const newLeft = prevState.posi + 5;
                 return {
